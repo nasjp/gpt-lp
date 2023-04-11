@@ -1,14 +1,19 @@
 import React from "react";
-import Logo from "./Logo";
-import Menu from "./Menu";
+import Navigation from "./Navigation";
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-blue-500 py-4">
-      <nav className="container mx-auto flex justify-between items-center">
-        <Logo />
-        <Menu />
-      </nav>
+    <header className="bg-white py-4 shadow-md">
+      <div className="container px-4 lg:px-0 mx-auto flex items-center justify-between">
+        <a href="/">
+          <img
+            src="/company-logo.png"
+            alt="会社ロゴ"
+            className="h-10 rounded-full"
+          />
+        </a>
+        <Navigation />
+      </div>
     </header>
   );
 };

@@ -2,11 +2,20 @@ import React from "react";
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="container mx-auto text-center py-16">
-      <h1 className="text-4xl font-bold mb-8">Headline</h1>
-      <button className="bg-blue-500 text-white px-8 py-2 rounded-lg hover:bg-blue-700">
-        Call to Action
-      </button>
+    <section
+      className="bg-cover bg-center bg-no-repeat py-20"
+      style={{
+        backgroundImage: `url(/hero-background.png)`,
+      }}
+    >
+      <div className="container px-4 lg:px-0 mx-auto text-center">
+        <h1 className="text-4xl lg:text-5xl font-bold mb-4 text-white">
+          サンプルテキスト
+        </h1>
+        <p className="text-lg lg:text-xl text-gray-200">
+          サンプルテキストの説明文
+        </p>
+      </div>
     </section>
   );
 };
